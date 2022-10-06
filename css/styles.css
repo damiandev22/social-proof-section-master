@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.9375rem;
+  background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, 
+                    url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+  }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container{
+    padding: 5.9375rem 10.3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.0625rem;
+}
+
+.left{
+    width: 43%;
+}
+
+.right{
+    position: relative;
+    top: 1.75rem;
+}
+
+h1{
+    font-size: 3.4375rem;
+    font-weight: 700;
+    letter-spacing: -0.125rem;
+    color: hsl(300, 43%, 22%);
+    line-height: 0.9;
+    margin-bottom: 1.625rem;
+    width: 90%;
+}
+
+p{
+    color: hsl(303, 10%, 53%);
+    font-size: 1.125rem;
+}
+
+.rated{
+    padding: 1rem 1.25rem;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.stars{
+    display: inline-flex;
+}
+
+.star{
+    margin-right: 0.5rem;
+}
+
+.review{
+    position: relative;
+    right: 5.625rem;
+}
+
+.report{
+    position: relative;
+    right: 2.8125rem;
+}
+
+.rated p{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+main{
+    position: relative;   
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote{
+    position: relative;
+    padding: 1.5625rem 1.875rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    max-width: 31.2%;
+
+}
+
+.irene{
+    position: relative;
+    top: 1rem;
+}
+
+.anne{
+    position: relative;
+    top: 2rem;
+}
+
+.quote img{
+    border-radius: 100%;
+    width: 16%;
+    float: left;
+    margin-right: 1.5rem;
+    
+}
+
+.card-header{
+    line-height: 1.2;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+
+.quote p{
+    color: hsl(333, 80%, 67%);
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+q{
+    color: hsl(0, 0%, 100%);
+    
+}
+
+@media (max-width: 1330px){
+
+    .container{
+        padding: 2.1875rem 4.0625rem;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4.0625rem;
+    }
+
+    .left{
+        width: 43%;
+    }
+
+    .right{
+        position: relative;
+        top: 1.125rem;
+    }
+
+    h1{
+        margin-bottom: 1.125rem;
+    }
+
+    .rated{
+        padding: 1rem 0.9375rem;
+
+    }
+        
+    .star{
+        margin-right: 0.2rem;
+    }
+    
+    .review{
+        position: relative;
+        right: 1.875rem;
+    }
+    
+    .report{
+        position: relative;
+        right: 0.9375rem;
+    }
+
+
+}
+
+@media (max-width: 600px){
+    
+    body{
+        text-align: center;
+        background: url(../images/bg-pattern-top-mobile.svg)  left top no-repeat, url(../images/bg-pattern-bottom-mobile.svg)  bottom right no-repeat;
+    }
+
+    .container{
+        padding: 5rem 1.6875rem;
+        width: 90%;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.25rem;
+    }
+
+    .left{
+        margin-bottom: 1.125rem;
+    }
+
+    h1{
+        font-size: 2.125rem;
+        font-weight: 700;
+    }
+
+    header p{
+        font-size: 0.9375rem;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .rated{
+        padding: 0.9375rem 0.3125rem;
+        background-color: hsl(300, 24%, 96%);
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .stars{
+        margin-bottom: 0.5rem;
+    }
+    
+    .review{
+        position: initial;
+        
+    }
+    
+    .report{
+        position: initial;
+        
+    }
+
+    main {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quote {
+        position: initial;
+        padding: 1.5625rem 2rem;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 0.5rem;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        text-align: left;
+        font-size: 0.875rem;
+    }
+
+    .card-header p{
+        font-size: 0.875rem;
+    }
+}
